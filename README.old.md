@@ -1,1 +1,0 @@
-# glseven-react
