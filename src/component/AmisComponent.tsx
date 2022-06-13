@@ -1,10 +1,10 @@
-import React from "react";
-import { render as renderAmis, toast, AlertComponent, ToastComponent } from "amis";
+import { AlertComponent, render as renderAmis, toast, ToastComponent } from "amis";
+import 'amis/lib/helper.css';
+import 'amis/lib/themes/antd.css';
+import 'amis/sdk/iconfont.css';
 import axios from "axios";
 import copy from "copy-to-clipboard";
-import 'amis/lib/themes/antd.css';
-import 'amis/lib/helper.css';
-import 'amis/sdk/iconfont.css';
+import React from "react";
 
 class AmisComponent extends React.Component<any, any>{
 
@@ -24,11 +24,13 @@ class AmisComponent extends React.Component<any, any>{
                         title: '简单页面',
                         body: '内容'
                     },
+
                         {
                             // props...
                             // locale: 'en-US' // 请参考「多语言」的文档
                             // scopeRef: (ref: any) => (amisScoped = ref)  // 功能和前面 SDK 的 amisScoped 一样
                         },
+
                         {
                             // 下面三个接口必须实现
                             fetcher: ({
